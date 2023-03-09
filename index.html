@@ -1,21 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인포트폴리오</title>
-</head>
-<body>
-    <ul>
-        <li><a href="project001/">대전아쿠아리움사이트리뉴얼</a></li>
-        <li><a href="project002/">프로젝트002 - 쇼핑몰</a></li>
-        <li><a href="project003/">프로젝트003 - 인물 / 홍보형</a></li>
-    </ul>
 
-    <p>학습예제</p>
-    <ul>
-        <li><a href="example/nike">나이키-트랜스폼 학습</a></li>
-    </ul>
-</body>
-</html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>포트폴리오</title>
+        <!-- 리셋스타일시트 -->
+        <style>
+            * {margin: 0;
+                padding: 0;
+                }
+                a {text-decoration: none;
+                }
+                img {vertical-align: bottom;
+                    border: none;}
+                ul,ol {list-style: none;}
+    
+    
+                /* 메인컬러설정과 메인폰트설정 */
+    
+                /* root 방식 - 전처리기법  */
+                :root {
+    
+                    --main-color:#c737bc;
+                    --point-color:#ffff00;
+                    --bg-color:#333333;
+                    --main-font:'Nanum Gothic';
+                    --main-wd:900px;
+    
+                }
+    
+                a{color: var(--main-color);}
+    
+        </style>
+    
+        <!-- 외부스타일시트 -->
+        <!-- 1번째 롱페이지에서 화면스크롤전환페이지작성 -->
+        <link rel="stylesheet" href="css/style01.css">
+    
+        <!-- 2번째 고정화면에서 section이 나타나는구조  -->
+    
+        <!-- 3번째 총4개의 html을 연결하는 구조 -->
+    
+        <!-- 외부스크립트연결 -->
+    
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        
+        <script src="js/jquery-ui.min.js"></script>
+        
+        <script src="js/js.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SKILL</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+        <div id="wrap">
+            <section id="home">
+                <h1>
+                    <span>P</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>T</span>
+                    <span>F</span>
+                    <span>O</span>
+                    <span>L</span>
+                    <span>I</span>
+                    <span>O</span>
+                   
+                  </h1>
+            </section>
+            <section id="portfolio">
+                <div class="mainbox">
+                    <div class="monster_inner">
+                        <strong>몬스터에너지 리뉴얼</strong>
+                     <div class="monster_img">
+                        <img class="monster_img" src="img/pc-screen-mockup-psd copy.jpg" alt="">
+                     </div>
+                     <ul>
+                        <li><a target="_blank" href="img/포트폴리오_유재건.jpg">DETAIL</a></li>
+                        <li><a href="http://dbworjs1.dothome.co.kr/project1" target="_blank">URL</a></li>
+                     </ul>
+                    </div>
+                    <div class="eden_inner">
+                        <span>어나더에덴 팬페이지</span>
+
+                        <div class="eden_img">
+                           <img class="eden_img" src="img/pc2.jpg" alt="">
+                        </div>
+                        <ul>
+                           <li><a target="_blank" href="img/포트폴리오_작업2.jpg">DETAIL</a></li>
+                           <li><a href="#">URL</a></li>
+                        </ul>
+                       </div>
+                </div>
+            </section>
+            <section id="about">
+             <div class="ab">
+                    <div class="icon"><img src="img/3884851.png" alt=""></div>
+                    <img src="img/imgs.png" alt="" class="img2">
+             </div>
+            </section>
+
+            <section id="skill">
+      <div class="skill">
+                    <h1>MY Skill</h1>
+                    <li><h3>html</h3>
+                    <span class="bar"><span class="html"></span></span></li>
+                    <li><h3>css</h3>
+                        <span class="bar"><span class="css"></span></span></li>
+                    <li><h3>javascript</h3>
+                    <span class="bar"><span class="javascript"></span></span></li>
+                    <li><h3>Ai</h3>
+                        <span class="bar"><span class="Ai"></span></span></li>
+                    <li><h3>Ps</h3>
+                    <span class="bar"><span class="Ps"></span></span></li>
+                    <li><h3>Figma</h3>
+                        <span class="bar"><span class="Figma"></span></span></li>
+      </div>
+            </section>
+      
+        </div>
+    
+    
+        
+    </body>
+    </html>
